@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const PORT = process.env.PORT || 3000;
 const path = require("path");
 const http = require("http");
 
@@ -24,4 +25,4 @@ app.get("/", (req, res) => {
     res.render("index");
 })
 
-server.listen(3000);
+server.listen(PORT);
